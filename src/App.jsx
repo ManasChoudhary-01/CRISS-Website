@@ -1,12 +1,80 @@
+import React from "react";
 import './App.css';
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  
+import Navbar from "./components/Navbar/Navbar"
+
+const Home = () => {
   return (
     <>
-      <p>Criss Robotics</p>
+      <Navbar />
+      <section className="hero-section">
+        <p>Welcome to </p>
+        <h1>Home Page</h1>
+      </section>
     </>
   );
-}
+};
+
+const Team = () => {
+  return (
+    <>
+      <Navbar />
+      <section className="hero-section">
+        <p>Welcome to </p>
+        <h1>Team Page</h1>
+      </section>
+    </>
+  );
+};
+
+const OurAlumni = () => {
+  return (
+    <>
+      <Navbar />
+      <section className="hero-section">
+        <p>Welcome to </p>
+        <h1>Alumni Page</h1>
+      </section>
+    </>
+  );
+};
+
+const Support = () => {
+  return (
+    <>
+      <Navbar />
+      <section className="hero-section">
+        <p>Welcome to </p>
+        <h1>Support US Page</h1>
+      </section>
+    </>
+  );
+};
+
+const Contact = () => {
+  return (
+    <>
+      <Navbar />
+      <section className="hero-section">
+        <p>Welcome to </p>
+        <h1>Contact Page</h1>
+      </section>
+    </>
+  );
+};
+
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/team" element={<Team />} />
+      <Route path="/alumni" element={<OurAlumni />} />
+      <Route path="/support" element={<Support />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  );
+};
 
 export default App;
