@@ -1,0 +1,157 @@
+.facultyCard {
+    height: fit-content;
+    width: 200px;
+    font-family: Inter;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    &:hover {
+        box-shadow: 0px 3.08px 8.34px 0px #00000029;
+        transform: scale(1.1);
+    }
+
+    &:hover .details .social{
+        visibility: visible;
+    }
+
+        
+    .position {
+        padding-bottom: 5px;
+        color: #14A1E8;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 550;
+    }
+
+    .imgContainer {
+        height: 225px;
+        width: 200px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .details {
+        padding-top: 5px;
+        margin: 7px;
+        padding-bottom: 5px;
+        height: fit-content;
+
+        .name {
+            line-height: normal;
+            font-size: 20px;
+            color: #00275B;
+            font-weight: 550;
+            text-transform: uppercase;
+        }
+
+        .dept {
+            padding-top: 5px;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .social {
+            padding-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            transition: all 0.3s ease-in-out;
+            visibility: hidden;
+    
+            a {
+                text-decoration: none;
+                height: 40px;
+                width: 40px;
+                cursor: pointer;
+            }
+            #email svg{
+                fill: #e74c3c;    
+            }
+            #website svg{
+                fill: #349bdb;    
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+
+    .facultyCard {
+        height: fit-content;
+        width: 185px;
+        box-shadow: 0px 3.08px 8.34px 0px #00000029;
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    
+        &:hover .details .social{
+            visibility: visible;
+        }
+    
+            
+        .position {
+            padding-bottom: 3px;
+            font-size: 14px;
+        }
+    
+        .imgContainer {
+            height: 200px;
+            width: 185px;
+        }
+    
+        .details {
+            width: 185px;
+            padding: 5px;
+            margin: 0px;
+            height: fit-content;
+            padding-bottom: 10px;
+    
+            .name {
+                font-size: 16px;
+            }
+    
+            .dept {
+                padding-top: 3px;
+                font-size: 13px;
+            }
+    
+            .social {
+                padding-top: 3px;
+                justify-content: space-evenly;
+                visibility: visible;
+        
+                a {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 450px) {
+
+    .facultyCard {
+        width: 42vw;
+        
+        .imgContainer {
+            height: 200px;
+            width: 100%;
+        }
+    
+        .details {
+            width: 100%;
+            padding: 5px;
+            margin: 0px;
+            height: fit-content;
+            padding-bottom: 10px;
+        }
+    }
+}

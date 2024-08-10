@@ -1,7 +1,16 @@
+header {
+    height: 8rem;
+
+    @media screen and (max-width: 1000px) {
+        height: 7rem;
+    }
+}
+
 main {
-    position: relative;
-    top: 10rem;
-    height: 100vh;
+    background-color: #F1F8FF;
+    height: fit-content;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
     width: 100%;
 
     h2 {
@@ -18,7 +27,7 @@ main {
         }
 
         @media screen and (max-width: 820px) {
-            font-size: 23px;
+            font-size: 40px;
             margin-top: 0;
             margin-bottom: 40px;
         }
@@ -26,13 +35,116 @@ main {
     }
 
     menu {
-        // padding-left: 2rem;
-        // padding-right: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 2rem 2vw ;
+        gap: 2rem 2vw;
     }
 
+    .dropmenuContainer {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: none;
+    }
+
+    .memberContainer {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+
+        h6 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #00275B;
+            font-weight: 700;
+            font-family: Inter;
+            text-align: center;
+            margin-top: 30px;
+
+            @media screen and (max-width: 820px) {
+                font-size: 32px;
+                margin-top: 20px;
+            }
+        }
+
+        .members {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem 7rem;
+        }
+    }
+
+}
+
+@media(max-width :900px) {
+
+    main {
+
+        menu {
+            display: none;
+        }
+
+        .dropmenuContainer {
+            display: block;
+        }
+    }
+}
+
+@media (max-width :600px) {
+
+    main {
+
+        h2 {
+            font-size: 32px;
+            font-weight: 650;
+        }
+
+        .memberContainer {
+
+            h6 {
+                font-size: 28px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (max-width : 500px) {
+
+    main {
+        .memberContainer {
+
+            .members {
+                gap: 4rem 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width : 450px) {
+
+    main {
+        .memberContainer {
+
+            .members {
+                gap: 4rem 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width : 400px) {
+
+    main {
+        .memberContainer {
+
+            .members {
+                gap: 4rem 2rem;
+            }
+        }
+    }
 }

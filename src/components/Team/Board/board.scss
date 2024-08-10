@@ -1,0 +1,25 @@
+.leadContainer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    justify-content: center;
+}
+
+@media(max-width: 800px) {
+
+    .leadContainer {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 580px) {
+
+    .leadContainer {
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
