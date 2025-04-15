@@ -50,19 +50,25 @@ export default function Navbar({ color }) {
         <div className="links">
           <ul>
             <li>
-              <NavLink to="/" activeClassName="active">Home</NavLink>
+              <NavLink to="/" activeclassname="active">Home</NavLink>
+            </li>
+            {/* <li>
+              <NavLink to="/irc" activeclassname="active">IRC</NavLink>
+            </li> */}
+            {/* <li>
+              <NavLink to="/events" activeclassname="active">Robowars</NavLink>
+            </li> */}
+            <li>
+              <NavLink to="/sponsorship" activeclassname="active">Sponsorship</NavLink>
             </li>
             <li>
-              <NavLink to="/sponsorship" activeClassName="active">Sponsorship</NavLink>
+              <NavLink to="/competitions" activeclassname="active">Competitions</NavLink>
             </li>
             <li>
-              <NavLink to="/competitions" activeClassName="active">Competitions</NavLink>
+              <NavLink to="/team" activeclassname="active">Team</NavLink>
             </li>
             <li>
-              <NavLink to="/team" activeClassName="active">Team</NavLink>
-            </li>
-            <li>
-              <NavLink to="/alumni" activeClassName="active">Alumni</NavLink>
+              <NavLink to="/alumni" activeclassname="active">Alumni</NavLink>
             </li>
           </ul>
         </div>
@@ -79,20 +85,26 @@ export default function Navbar({ color }) {
         <div className={`ham-menu ${isHamOpen && 'open'}`}>
           <ul className="ham-list">
             <li>
-              <NavLink to="/" activeClassName="active" onClick={handleHamOpen}>Home</NavLink>
+              <NavLink to="/" activeclassname="active" onClick={handleHamOpen}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/sponsorship" activeClassName="active" onClick={handleHamOpen}>Sponsorship</NavLink>
+              <NavLink to="/events" activeclassname="active" onClick={handleHamOpen}>Robowars</NavLink>
             </li>
             <li>
-              <NavLink to="/competitions" activeClassName="active" onClick={handleHamOpen}>Competitions</NavLink>
+              <NavLink to="/sponsorship" activeclassname="active" onClick={handleHamOpen}>Sponsorship</NavLink>
             </li>
             <li>
-              <NavLink to="/team" activeClassName="active" onClick={handleHamOpen}>Team</NavLink>
+              <NavLink to="/competitions" activeclassname="active" onClick={handleHamOpen}>Competitions</NavLink>
             </li>
             <li>
-              <NavLink to="/alumni" activeClassName="active" onClick={handleHamOpen}>Alumni</NavLink>
+              <NavLink to="/team" activeclassname="active" onClick={handleHamOpen}>Team</NavLink>
             </li>
+            <li>
+              <NavLink to="/alumni" activeclassname="active" onClick={handleHamOpen}>Alumni</NavLink>
+            </li>
+            {/* <li>
+              <NavLink to="/events" activeclassname="active" onClick={handleHamOpen}>Events</NavLink>
+            </li> */}
           </ul>
         </div>
 

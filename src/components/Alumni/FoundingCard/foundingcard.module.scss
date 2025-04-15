@@ -1,77 +1,69 @@
 .foundingCard {
-    height: fit-content;
-    width: 200px;
     font-family: Inter;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    transition: all 0.2s ease-in-out;
 
-    &:hover {
-        box-shadow: 0px 3.08px 8.34px 0px #00000029;
+    &:hover .front .imgContainer{
         transform: scale(1.1);
     }
 
-    &:hover .details .social{
-        visibility: visible;
-    }
-
-    .imgContainer {
-        height: 225px;
-        width: 200px;
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .details {
-        padding-top: 5px;
-        margin: 7px;
-        padding-bottom: 5px;
+    .front {
+        width: 300px;
+        min-height: 310px;
         height: fit-content;
+        transition: transform 0.6s ease-in-out;
+        backface-visibility: hidden;
+        box-shadow: 0px 3.08px 8.34px 0px #00275B;
+        background-color: #00275B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+
+        .imgContainer {
+            height: 190px;
+            width: 190px;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            transition: all 0.2s ease-in-out;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
 
         .name {
+            margin-top: 1.8rem;
             line-height: normal;
-            font-size: 20px;
-            color: #00275B;
-            font-weight: 550;
+            font-size: 22px;
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
             text-transform: uppercase;
         }
-    
-        button {
-            background-color: #0176D3;
-            border: none;
-            padding: 12px 32px;
-            border-radius: 5px;
-            font-weight: 650;
-            font-family: Inter;
-            color: #fff;
-            font-size: 16px;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
 
-            &:hover {
-                background-color: #032D60;
-            }
-        }
-    
-        .social {
-            padding-top: 5px;
+        .button {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 8px;
-            transition: all 0.3s ease-in-out;
-            visibility: hidden;
-    
-            a {
-                text-decoration: none;
-                height: 30px;
-                width: 30px;
+            margin-top: 10px;
+            gap: 10px;
+
+            button {
                 cursor: pointer;
+                padding: 10px;
+                background-color: #00275B;
+                color: #14A1E8;
+                border: none;
+                font-size: 16px;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
             }
+
             #linkedin svg{
                 fill: #0A66C2;    
             }
@@ -79,69 +71,55 @@
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 650px) {
 
-    .alumniCard {
-        height: fit-content;
-        width: 185px;
-        box-shadow: 0px 3.08px 8.34px 0px #00000029;
-    
-        &:hover {
-            transform: scale(1.1);
+    .foundingCard {
+        margin-bottom: 0.5rem;
+
+        &:hover .front .imgContainer{
+            transform: scale(1);
         }
-    
-        &:hover .details .social{
-            visibility: visible;
-        }
-    
-        .imgContainer {
-            height: 200px;
-            width: 185px;
-        }
-    
-        .details {
-            width: 185px;
-            padding: 5px;
-            margin: 0px;
-            height: fit-content;
-            padding-bottom: 10px;
-    
-            .name {
-                font-size: 16px;
+
+        .front {
+            width: 270px;
+            min-height: 275px;
+            justify-content:center;
+            padding-top: 5px;
+
+            .imgContainer {
+                height: 170px;
+                width: 170px;
+                border: 4px solid #fff;
             }
+
+            .name {
+                margin-top: 1.6rem;
+                font-size: 17px;
+            }
+
+            .button {
+                display: flex;
+                margin-top: 5px;
+                gap: 10px;
+    
+                button {
+                    cursor: pointer;
+                    padding: 10px;
+                    background-color: #00275B;
+                    color: #14A1E8;
+                    border: none;
+                    font-size: 16px;
         
-            .social {
-                padding-top: 3px;
-                visibility: visible;
-                justify-content: space-around;
-        
-                a {
-                    height: 25px;
-                    width: 25px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+    
+                #linkedin svg{
+                    fill: #0A66C2;    
                 }
             }
         }
-    }
-}
-
-@media(max-width:450px) {
-
-    .alumniCard {
-        width: 42vw;
-
-    
-        .imgContainer {
-            height: 200px;
-            width: 100%;
-        }
-    
-        .details {
-            width: 100%;
-            padding: 5px;
-            margin: 0px;
-            height: fit-content;
-            padding-bottom: 10px;
-           
-        }
+        
     }
 }
