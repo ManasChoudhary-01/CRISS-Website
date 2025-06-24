@@ -349,6 +349,17 @@ import s1 from "../../assets/images/Team/2022/Software/s1.webp";
 import m1 from "../../assets/images/Team/2022/Mechanical/m1.webp";
 import e1 from "../../assets/images/Team/2022/Electrical/e1.webp";
 import p1 from "../../assets/images/Team/2022/Payload/p1.webp";
+import b1 from "../../assets/images/Team/2022/Boards/b1.webp";
+import b2 from "../../assets/images/Team/2022/Boards/b2.webp";
+import b3 from "../../assets/images/Team/2022/Boards/b3.webp";
+import b4 from "../../assets/images/Team/2022/Boards/b4.webp";
+import b5 from "../../assets/images/Team/2022/Boards/b5.webp";
+import b6 from "../../assets/images/Team/2022/Boards/b6.webp";
+import l2 from "../../assets/images/Team/2022/Boards/l2.webp";
+import b7 from "../../assets/images/Team/2022/Boards/b7.webp";
+import advaitshukla from "../../assets/images/Team/2022/Management/advaitshukla.webp";
+import deepaksaini from "../../assets/images/Team/2022/Management/deepaksaini.webp";
+import shivtiwari from "../../assets/images/Team/2022/Management/shivtiwari.webp";
 
 export const Alumnis22 = [
 
@@ -358,117 +369,216 @@ export const Alumnis22 = [
         img: l1,
         position: "Team Captain",
         linkedin: "https://www.linkedin.com/in/nikhil-handa-6b42b2257/",
-        team: "",
+        team: "Technical",
+        batch: "2022"
+    },
+    {
+        id: "2",
+        name: "Chaitanya Agrawal",
+        img: l2,
+        position: "Team Manager",
+        linkedin: "https://www.linkedin.com/in/chaitanya-agrawal-8332aa27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        team: "management",
+        batch: "2022"
+    },
+    {
+        id: "3",
+        name: "Moksh Gupta",
+        img: b1,
+        position: "APOGEE Coordinator",
+        linkedin: "https://www.linkedin.com/in/moksh-gupta-b09440249/",
+        team: "management",
+        batch: "2022"
+    },
+    {
+        id: "4",
+        name: "Shravan Gupta",
+        img: b6,
+        position: "Events and Marketing Head",
+        linkedin: "https://www.linkedin.com/in/shravan-gupta-701b4925a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        team: "management",
+        batch: "2022"
+    },
+    {
+        id: "5",
+        name: "KANAK GUPTA",
+        img: b4,
+        position: "BOSM Coordinator",
+        linkedin: "https://www.linkedin.com/in/kanak-gupta-a6684427b/",
+        team: "management",
+        batch: "2022"
+    },
+    {
+        id: "6",
+        name: "Aarya Jindal",
+        img: b2,
+        position: "Web Dev Head",
+        linkedin: "https://www.linkedin.com/in/aarya-jindal/",
+        team: "management",
+        batch: "2022"
+    },
+    {
+        id: "7",
+        name: "Ayush Singla",
+        img: b5,
+        position: "Business Relations Head",
+        linkedin: "https://www.linkedin.com/in/ayush-singla-370147268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        team: "management",
         batch: "2022"
     },
     {
         id: "8",
-        name: "Jash Karani",
-        img: b8,
-        position: "Software Lead",
-        linkedin: "https://www.linkedin.com/in/jash-karani-247996173/",
-        team: "",
+        name: "ADITYA THOLE",
+        img: b3,
+        position: "Sponsorship Head",
+        linkedin: "https://www.linkedin.com/in/aditya-thole-a80889269/",
+        team: "management",
         batch: "2022"
     },
     {
         id: "9",
+        name: "Jash Karani",
+        img: b8,
+        position: "Software Lead",
+        linkedin: "https://www.linkedin.com/in/jash-karani-247996173/",
+        team: "technical",
+        batch: "2022"
+    },
+    {
+        id: "10",
         name: "Ritvik Mongia",
         img: b9,
         position: "Software Integration Engineer",
         linkedin: "https://www.linkedin.com/in/ritvikmongia/",
-        team: "",
+        team: "technical",
         batch: "2022"
-     },
-     {
-        id: "10",
+    },
+    {
+        id: "11",
         name: "Amarthya Guru",
         img: b10,
         position: "Mechanical Lead",
         linkedin: "https://www.linkedin.com/in/amarthya-guru/",
-        team: "",
-        batch: "2022"
-     },
-     {
-        id: "11",
-        name: "Sanjeiv Suresh ",
-        img: b11,
-        position: "Mechanical Integration Engineer",
-        linkedin: "https://www.linkedin.com/in/sanjeiv-suresh-460524255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        team: "",
+        team: "technical",
         batch: "2022"
     },
     {
         id: "12",
-        name: "HARSHITH REDDY",
-        img: b12,
-        position: "Electrical Lead",
-        linkedin: "https://www.linkedin.com/in/harshith-reddy-358275312",
-        team: "",
+        name: "Sanjeiv Suresh ",
+        img: b11,
+        position: "Mechanical Integration Engineer",
+        linkedin: "https://www.linkedin.com/in/sanjeiv-suresh-460524255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        team: "technical",
         batch: "2022"
     },
     {
         id: "13",
-        name: "Vidyarenu Swamy",
-        img: b13,
-        position: "Electrical Vice Lead",
-        linkedin: "https://www.linkedin.com/in/vidyarenu-swamy-8a4940319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        team: "",
+        name: "HARSHITH REDDY",
+        img: b12,
+        position: "Electrical Lead",
+        linkedin: "https://www.linkedin.com/in/harshith-reddy-358275312",
+        team: "technical",
         batch: "2022"
     },
     {
         id: "14",
-        name: "Sohan Pattanayak",
-        img: b14,
-        position: "Payload Lead",
-        linkedin: "https://www.linkedin.com/in/psohanp/",
-        team: "",
+        name: "Vidyarenu Swamy",
+        img: b13,
+        position: "Electrical Vice Lead",
+        linkedin: "https://www.linkedin.com/in/vidyarenu-swamy-8a4940319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        team: "technical",
         batch: "2022"
     },
     {
         id: "15",
+        name: "Sohan Pattanayak",
+        img: b14,
+        position: "Payload Lead",
+        linkedin: "https://www.linkedin.com/in/psohanp/",
+        team: "technical",
+        batch: "2022"
+    },
+    {
+        id: "16",
         name: "Shubhang Gautam",
         img: b15,
         position: "Experimentation Lead",
         linkedin: "https://www.linkedin.com/in/shubhang-gautam-821b09251/",
-        team: "",
+        team: "technical",
         batch: "2022"
     },
     {
-        id: "1",
+        id: "17",
         name: "Abhimanyu Bhowmik",
         img: s1,
         position: "Core Engineer",
         linkedin: "https://www.linkedin.com/in/abhimanyu-bhowmik-734326256/",
-        team: "",
+        team: "technical",
         batch: "2022"
     },
     {
-        id: "1",
+        id: "18",
         name: "Shivang Shandilya",
         img: m1,
         position: "Core Engineer",
         linkedin: null,
-        team: "",
+        team: "technical",
         batch: "2022"
-    },  
+    },
     {
-        id: "1",
+        id: "19",
         name: "Pranav Sud",
         img: e1,
         position: "Core Engineer",
         linkedin: "https://www.linkedin.com/in/pranav-sud-3a136b285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        team: "",
+        team: "technical",
         batch: "2022"
     },
     {
-        id: "1",
+        id: "20",
         name: "Sahaj Sethi",
         img: p1,
         position: "Core Engineer",
         linkedin: "https://www.linkedin.com/in/sahaj-sethi-67568a201",
-        team: "",
+        team: "technical",
         batch: "2022"
-    },      
+    },
+    {
+        id: "21",
+        name: "Advait Shukla",
+        img: advaitshukla,
+        position: "Management Team",
+        linkedin: null,
+        team: "management",
+        batch: "2022"
+    },
+    {
+        id: "22",
+        name: "Deepak Saini",
+        img: deepaksaini,
+        position: "Management Team",
+        linkedin: null,
+        team: "management",
+        batch: "2022"
+    },
+    {
+        id: "23",
+        name: "Shiv Tiwari",
+        img: shivtiwari,
+        position: "Management Team",
+        linkedin: "https://www.linkedin.com/in/shiv-tiwari-647557258/",
+        team: "management",
+        batch: "2022"
+    },
+    {
+        id: "24",
+        name: "Vedant Sindhwani",
+        img: b7,
+        position: "Management Team",
+        linkedin: "https://www.linkedin.com/in/vedant-sindhwani-93720b145",
+        team: "management",
+        batch: "2022"
+    },
 ];
 
 import fd1 from "../../assets/images/Alumni/Founding/fd1.webp";
@@ -488,7 +598,7 @@ export const FoundingMembers = [
         para3: "Getting and arranging access to infrastructure such as dedicated workspaces (ICE labs, access to workshops and 3D printing, electrical lab room), onboarding a cohort of professors and Director Barai for mentoring and supporting team, leading the purchasing of all required items for rover manufacturing towards my stint end. Ideated the workshop-based recruitment pedagogy along with vice cap Uttank to minisme barrier of entry and attract best talents who are genuinely interested in team. Ideated and instilled core cultural values of team such as extreme focus on execution, targeting competitions hard, least team formal hierarchy between all batches for open communication, focusing on funds and marketing on campus, etc.  A small disclaimer: none of these were possible without help from others, I am grateful to all my batchies and juniors of that time who believed in my vision and extended their support.",
         para4: "My message for the team: You guys are freaking’ amazing and are doing fascinating tech. From 2021 since it took off, I am immensely proud of CRISS because of the kind of talent it attracts and retains and inspires to deliver top notch performances every year. Stay curious, stay hungry. Try to align whatever your team endeavors are with what you wanna do ahead in life. You will unleash almost unlimited willpower and excitement for things that matter to the team and more to yourself.",
         para5: "It doesn't matter what your background is or current circumstances are; as long as you are clear on making your dream a reality and you are really working on it every hour, every day.",
-        linkedin: "https://www.linkedin.com/in/swapnil18800/" 
+        linkedin: "https://www.linkedin.com/in/swapnil18800/"
     },
     {
         id: "2",
